@@ -129,7 +129,7 @@ section {
   /* height: 100vh; */
 }
 .container {
-  margin: auto;
+  margin: 10rem auto 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
