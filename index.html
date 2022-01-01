@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>My Bank</title>
+  </head>
+  <body>
+    <section id="section-first">
+      <div class="login-section">
+        <h1 class="title">Welcome to Pioneer Bank</h1>
+
+        <form action="#" class="form">
+          <h1 class="form-title">Sign In</h1>
+          <div class="form-div">
+            <input type="text" class="form-input" placeholder=" "/>
+            <label for="" class="form-label">Email</label>
+          </div>
+
+          <div class="form-div">
+            <input type="password" class="form-input" placeholder=" " />
+            <label for="" class="form-label">Password</label>
+          </div>
+          <input type="submit" class="form-submit" value="Sign In" id="sign-in"/>
+        </form>
+      </div>
+    </section>
+
+    <section id="section-second">
+      <div class="container">
+        <div class="first">
+          <div class="box-1 box">
+            <h1>Deposit</h5>
+            <h2>$<span id="deposit">00</span></h2>
+          </div>
+
+          <div class="box-2 box">
+            <h1>Withdraw</h5>
+            <h2>$<span id="withdraw">00</span></h2>
+          </div>
+
+          <div class="box-3 box">
+            <h1>Balance</h5>
+            <h2>$ <span id="balance">1000</span></h2>
+          </div>
+        </div>
+
+        <div class="second">
+          <div class="raw">
+            <h2>Deposit</h2>
+            <input id="depositAmount" class="deposit" type="number" placeholder="& amount you want to deposit">
+            <button id="deposit-button" class="button" >Deposit</button>
+          </div>
+
+          <div class="raw">
+            <h2>Withdraw</h2>
+            <input id="withdrawAmount" type="number" class="deposit" placeholder="& amount you want to withdraw">
+            <button class="button" id="withdraw-button">Withdraw</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

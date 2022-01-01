@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  background-color: aliceblue;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+section {
+  box-sizing: border-box;
+  height: 100vh;
+  max-width: 98vw;
+  width: 90%;
+}
+/* ======== First Section ======= */
+
+.login-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+}
+.title {
+  font-weight: 600;
+  font-size: 4rem;
+  padding: 2rem;
+  background: linear-gradient(90deg, #00dbde, #fc00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.form {
+  box-sizing: border-box;
+  width: 400px;
+  background-color: white;
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 10px;
+}
+.form-title {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  font-weight: 600;
+}
+.form-div {
+  position: relative;
+  height: 30px;
+  margin-bottom: 5.5rem;
+}
+.form-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.5rem;
+  width: 94%;
+  height: 100%;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  outline: none;
+  padding: 1rem;
+  background: none;
+  z-index: 1;
+}
+
+.form-label {
+  position: absolute;
+  left: 1rem;
+  top: 1.5rem;
+  font-size: 1.7rem;
+  padding: 0px 0.25rem;
+  background-color: white;
+  color: gray;
+  transition: 0.3s;
+}
+.form-submit {
+  display: block;
+  margin-left: auto;
+  cursor: pointer;
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: 2px solid #1a73e8;
+  background: #1a73e8;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.form-submit:hover {
+  background: transparent;
+  color: #1a73e8;
+}
+
+.form-input:focus + .form-label {
+  top: -1rem;
+  color: #1a73e8;
+  z-index: 10;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.form-input:not(:placeholder-shown).form-input:not(:focus) + .form-label {
+  top: -1rem;
+  z-index: 10;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a73e8;
+}
+
+.form-input:focus {
+  border: 2px solid #1a73e8;
+}
+
+/* ========== section second=========== */
+
+#section-second {
+  font-family: "Poppins", sans-serif;
+  display: none;
+  box-sizing: border-box;
+  margin: auto;
+  /* height: 100vh; */
+}
+.container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 90vw;
+  box-sizing: border-box;
+}
+.first {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 4rem;
+}
+.box {
+  box-shadow: 2px 2px 10px rgb(42, 79, 110);
+  padding: 3rem;
+  border-radius: 0.5rem;
+}
+.box h1,
+h2 {
+  font-size: 2.5rem;
+  padding-left: 4rem;
+  color: aliceblue;
+  text-shadow: 1px 1px 2px rgb(32, 31, 31);
+  font-weight: 600;
+}
+.box-1 {
+  background-color: slateblue;
+}
+.box-2 {
+  background-color: #d98b6c;
+}
+.box-3 {
+  background-color: #dd940f;
+}
+.second {
+  margin: 3.5rem 0;
+  display: flex;
+}
+.raw {
+  width: 400px;
+  background-color: #ffffffcc;
+  box-shadow: 3px 3px 25px -13px;
+  padding: 3rem;
+  margin: 2rem;
+  border-radius: 0.5rem;
+}
+.raw h2 {
+  padding: 0;
+  font-size: 2rem;
+  color: black;
+  font-weight: 600;
+  text-shadow: none;
+}
+.raw .deposit {
+  display: block;
+  font-size: 1.5rem;
+  width: 90%;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  outline: none;
+  border: 2px solid rgb(179, 179, 179);
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+.raw .button {
+  display: block;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.raw .button:hover {
+  background-color: rgb(42, 170, 42);
+}
+.raw .deposit:focus {
+  border: 2px solid #1a73e8;
+}
+
+/* ========= Responsive ========= */
+@media screen and (max-width: 1020px) {
+  .first {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 4rem;
+  }
+  .raw {
+    width: 300px;
+  }
+  .box h1,
+  h2 {
+    font-size: 2rem;
+    padding-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .raw {
+    width: 400px;
+  }
+  .second {
+    flex-direction: column;
+  }
+  .first {
+    grid-template-columns: repeat(1, 350px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .form {
+    width: 350px;
+    padding: 0 2rem 3rem 2rem;
+  }
+  .first {
+    grid-template-columns: repeat(1, 300px);
+  }
+  .raw {
+    width: 260px;
+  }
+}
